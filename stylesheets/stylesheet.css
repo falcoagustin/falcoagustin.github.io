@@ -28,11 +28,25 @@ p {
   width: 739px;
   height: 416px;
   margin: 0 auto;
-  transition: all .25s ease-out;
+  overflow: hidden;
+  position: relative;
+  /*transition: all .25s ease-out;*/
 }
 
-.container:hover {
-  background: #343434;
+.container:hover .media-options{
+  opacity: 1;
+  top: 0;
+}
+
+.media-options {
+  background-color: rgba(5, 5, 5, .8);
+  height: 100%;
+  opacity: 0;
+  /*padding: $default-padding;*/
+  position: absolute;
+  top: 40vh;
+  transition: 500ms;
+  width: 100%;
 }
 
 .background-image {
@@ -45,6 +59,38 @@ p {
   transform: translateZ(0);
 }
 
-.background-image:hover {
-  opacity: .6;
+.media-container {
+  position: relative;
+  top: 45%;
+  margin-left: 10%;
+}
+
+.linked-media-image {
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #C2C2C2;
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  color: #C2C2C2;
+  margin-right: 14%;
+}
+
+.github {
+  background-image: url("../images/github.svg");
+}
+
+.linkedin {
+  background-image: url("../images/linkedin.svg");
+}
+
+.twitter {
+  background-image: url("../images/twitter.svg");
+}
+
+.mail {
+  background-image: url("../images/mail.svg");
+  margin-right: 0
 }
