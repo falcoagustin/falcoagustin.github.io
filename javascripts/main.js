@@ -1,7 +1,7 @@
 $('<img/>').attr('src', 'images/forest.jpg')[0].onload = function() {
   $(this).remove(); // prevent memory leaks as @benweet suggested
-  var loader = document.getElementsByClassName('loader')[0].style.display = 'none';
-  document.getElementById('bodySection').removeAttribute('hidden');
+  $('.loader')[0].style.display = 'none';
+  $('#bodySection')[0].removeAttribute('hidden');
   makeTextDraggable('#title', 50);
   makeTextDraggable('#description', 10);
   makeTextDraggable('#headerTitle', 50);
