@@ -78,6 +78,26 @@ p {
   margin-right: 14%;
 }
 
+.draggable {
+  position: relative;
+  left: -110vw;
+  animation: mymove 0.5s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+    0% {
+      left: -110vw;
+    }
+    100% {
+      left: 0;
+    }
+}
+
+#title {
+  position: relative;
+}
+
 .github {
   background-image: url("../images/github.svg");
 }
