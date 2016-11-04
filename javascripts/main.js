@@ -14,7 +14,7 @@ function makeTextDraggable(name, ms) {
   var randomValue;
   var randomTime;
   for (var i = 0; i < titleText.innerHTML.length; i ++) {
-    randomTime = Math.random() * 1000 || 1000;
+    randomTime = Math.random() * 100 || 100;
     randomValue = i ? i * Math.random() * 10 : -100;
     randomValue = i / 2 ? randomValue : - randomValue;
     var current = titleText.innerHTML[i];

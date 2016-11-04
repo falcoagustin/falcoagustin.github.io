@@ -84,21 +84,25 @@ p {
 }
 
 .draggable {
+  display: inline-block;
   position: relative;
-  /*left: -110vw;*/
-  top: -110vh;
-  animation: mymove 2s 1;
+  top: -30vh;
+  animation: mymove 1.5s 1;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
+  transition: all 500ms;
+  min-width: 5px;
 }
 
 @keyframes mymove {
     0% {
-      top: -110vh;
+      top: -30vh;
+      /*transform: rotate(45deg);*/
     }
     100% {
       left: 0;
       top: 0;
+      /*transform: rotate(360deg);*/
     }
 }
 
