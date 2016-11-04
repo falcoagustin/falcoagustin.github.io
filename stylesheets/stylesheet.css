@@ -87,7 +87,7 @@ p {
   position: relative;
   /*left: -110vw;*/
   top: -110vh;
-  animation: mymove 200ms 1;
+  animation: mymove 2s 1;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
