@@ -87,7 +87,7 @@ p {
   display: inline-block;
   position: relative;
   top: -30vh;
-  animation: mymove 1.5s 1;
+  animation: mymove 1.7s 1;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
   transition: all 500ms;
