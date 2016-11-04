@@ -85,17 +85,20 @@ p {
 
 .draggable {
   position: relative;
-  left: -110vw;
-  animation: mymove 0.5s 1;
+  /*left: -110vw;*/
+  top: -110vh;
+  animation: mymove 200ms 1;
   animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes mymove {
     0% {
-      left: -110vw;
+      top: -110vh;
     }
     100% {
       left: 0;
+      top: 0;
     }
 }
 

@@ -11,9 +11,14 @@ $('<img/>').attr('src', 'images/forest.jpg')[0].onload = function() {
 function makeTextDraggable(name, ms) {
   var titleText = $(name)[0];
   var result = ''
+  var randomValue;
+  var randomTime;
   for (var i = 0; i < titleText.innerHTML.length; i ++) {
-  let current = titleText.innerHTML[i];
-    current = '<span class="draggable" style="animation-delay:'+ ms * i +'ms;">' + current + '</span>';
+    randomTime = Math.random() * 1000 || 1000;
+    randomValue = i ? i * Math.random() * 10 : -100;
+    randomValue = i / 2 ? randomValue : - randomValue;
+    var current = titleText.innerHTML[i];
+    current = '<span class="draggable" style="animation-delay:'+ randomTime +'ms;left: ' + randomValue + 'vw;">' + current + '</span>';
     result += current;
   }
   titleText.innerHTML = result;
