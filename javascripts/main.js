@@ -8,7 +8,11 @@ $('<img/>').attr('src', 'images/forest.jpg')[0].onload = function() {
 
 $('.container').click(function() {
   options = $('.media-options');
-  options.addClass('cls');
+  if (options.hasClass('cls')) {
+    options.addClass('cls');
+  } else {
+    options.removeClass('cls');
+  }
 });
 
 function makeTextDraggable(name, ms) {
