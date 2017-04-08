@@ -49,6 +49,11 @@ p {
   width: 100%;
 }
 
+.cls {
+  opacity: 1;
+  top: 0;
+}
+
 .background-image {
   background-image: url("../images/forest.jpg");
   background-size: contain;

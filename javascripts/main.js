@@ -6,6 +6,10 @@ $('<img/>').attr('src', 'images/forest.jpg')[0].onload = function() {
 
 };
 
+$('.container').click(function() {
+  options = $('.media-options');
+  options.addClass('cls');
+});
 
 function makeTextDraggable(name, ms) {
   var titleText = $(name)[0];
