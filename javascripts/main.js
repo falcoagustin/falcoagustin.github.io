@@ -9,7 +9,7 @@ $('<img/>').attr('src', 'images/forest.jpg')[0].onload = function() {
 $('.container').click(function() {
   options = $('.media-options');
   if (options.hasClass('cls')) {
-    options.addClass('active-somked-container');
+    options.addClass('active-smoked-container');
   } else {
     options.removeClass('active-smoked-container');
   }
@@ -53,6 +53,7 @@ function callTyped(target, string) {
             loop: false,
             contentType: 'html', // or text
             callback: function(){
+              $('.media-options').addClass('active-smoked-container');
             },
             resetCallback: function() { }
           });
