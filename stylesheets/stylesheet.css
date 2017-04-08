@@ -159,23 +159,41 @@ p {
 
 /* Mobile */
 
-@media only screen and (max-width: 768px) {
+@media screen and (min-device-width : 320px) and (max-device-width : 900px) {
   .container {
-    width: 500px;
-    height: 416px;
-    margin-top: 200px;
-  }
-
-  .typed-strings{
-    width: 100%;
+    width: 150px;
   }
 
   .typed-strings h1 {
-    font-size: 70px;
+    margin: 10px;
+    margin-bot: 6px;
+    font-size: 20px;
   }
 
   .typed-strings p {
-    font-size: 30px;
+    margin: 6px;
+    font-size: 10px;
   }
 
+  body, .media-options, .background-image, .media-container {
+    width: 190px;
+  }
+
+  .media-options {
+    height: 108px;
+  }
+
+  .linked-media-image {
+    width: 32px;
+    height: 32px;
+  }
+
+  .media-container {
+    top: 17px;
+    left: 5px;
+  }
+
+  .container {
+    margin-right: 15px;
+  }
 }
