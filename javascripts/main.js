@@ -9,9 +9,9 @@ $('<img/>').attr('src', 'images/forest.jpg')[0].onload = function() {
 $('.container').click(function() {
   options = $('.media-options');
   if (options.hasClass('cls')) {
-    options.addClass('cls');
+    options.addClass('active-somked-container');
   } else {
-    options.removeClass('cls');
+    options.removeClass('active-smoked-container');
   }
 });
 

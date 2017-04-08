@@ -49,7 +49,7 @@ p {
   width: 100%;
 }
 
-.cls {
+.active-smoked-container {
   opacity: 1;
   top: 0;
 }
@@ -86,29 +86,6 @@ p {
 
 .linked-media-image:hover {
   opacity: 1;
-}
-
-.draggable {
-  display: inline-block;
-  position: relative;
-  top: -30vh;
-  animation: mymove 1.7s 1;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
-  transition: all 500ms;
-  min-width: 5px;
-}
-
-@keyframes mymove {
-    0% {
-      top: -30vh;
-      /*transform: rotate(45deg);*/
-    }
-    100% {
-      left: 0;
-      top: 0;
-      /*transform: rotate(360deg);*/
-    }
 }
 
 #title {
@@ -168,30 +145,6 @@ p {
 .loader:after {
   left: 1.5em;
 }
-@-webkit-keyframes load1 {
-  0%,
-  80%,
-  100% {
-    box-shadow: 0 0;
-    height: 4em;
-  }
-  40% {
-    box-shadow: 0 -2em;
-    height: 5em;
-  }
-}
-@keyframes load1 {
-  0%,
-  80%,
-  100% {
-    box-shadow: 0 0;
-    height: 4em;
-  }
-  40% {
-    box-shadow: 0 -2em;
-    height: 5em;
-  }
-}
 
 .typed-cursor{
     opacity: 1;
@@ -199,11 +152,15 @@ p {
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
+
 .typed-strings {
   height: 180px;
 }
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+/* Mobile */
+
+@media only screen and (max-width: 270px) {
+  .container {
+    margin-top: 100px;
+  }
 }
