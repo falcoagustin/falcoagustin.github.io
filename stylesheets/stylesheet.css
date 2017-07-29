@@ -307,9 +307,7 @@ p {
   }
 
   .media-container {
-    top: 40%;
-    left: 7%;
-    margin-left: 0;
+    margin-left: -10%;
   }
 
   .container {
@@ -317,5 +315,20 @@ p {
     width: 300px;
     margin-top: 80px;
     margin-right: 22px;
+  }
+  .linkedin-container {
+    top: 54%;
+  }
+
+  .github-container {
+    top: 43%;
+  }
+
+  .twitter-container {
+    top: 66%;
+  }
+
+  .email-container {
+    top: 78%;
   }
 }
