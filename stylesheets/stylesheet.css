@@ -273,7 +273,7 @@ p {
 @media screen and (min-device-width : 320px) and (max-device-width : 800px) {
 
   .typed-strings h1 {
-    margin: 10px 10px 28px 10px;
+    margin: 10px 10px 22px 10px;
     font-size: 26px;
   }
 
@@ -317,7 +317,7 @@ p {
     margin-right: 22px;
   }
   .linkedin-container {
-    top: 57%;
+    top: 56%;
   }
 
   .github-container {
@@ -329,6 +329,6 @@ p {
   }
 
   .email-container {
-    top: 81%;
+    top: 82%;
   }
 }
