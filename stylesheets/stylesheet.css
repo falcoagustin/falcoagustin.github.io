@@ -72,7 +72,7 @@ p {
 
 .animation-left {
   display: block !important;
-  animation-name: rotate-left, drag-left;
+  animation-name: drag-left;
   animation-duration: 2s;
   -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
   animation-fill-mode: forwards;
@@ -111,7 +111,7 @@ p {
 }
 .animation-right {
     display: block !important;
-    animation-name: drag-right, rotate-right;
+    animation-name: drag-right;
     animation-duration: 2s;
     -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
     animation-fill-mode: forwards;
