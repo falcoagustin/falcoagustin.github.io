@@ -72,12 +72,35 @@ p {
 
 .animation-left {
   display: block !important;
-  animation-name: drag-left;
-  animation-duration: .7s;
+  animation-name: rotate-left, drag-left;
+  animation-duration: 2s;
   -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
   animation-fill-mode: forwards;
 }
 
+@-webkit-keyframes rotate-right {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    }to{
+    -webkit-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes rotate-left {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    }to{
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 @keyframes drag-left {
     0% {
         left: -100px;
@@ -88,8 +111,8 @@ p {
 }
 .animation-right {
     display: block !important;
-    animation-name: drag-right;
-    animation-duration: .7s;
+    animation-name: drag-right, rotate-right;
+    animation-duration: 2s;
     -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
     animation-fill-mode: forwards;
 }
@@ -267,6 +290,7 @@ p {
 .typed-strings {
   height: 180px;
 }
+
 
 /* Mobile */
 
