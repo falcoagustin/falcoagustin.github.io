@@ -67,6 +67,7 @@ p {
 .media-container {
   display: none;
   position: absolute;
+  transform: translate(-50%, -50%);
   left: 49%
 }
 
@@ -126,27 +127,20 @@ p {
     }
 }
 
-/* .initial-container-left { */
-/*   left: -100px; */
-/* } */
-
-/* .initial-container-right { */
-/*   right: 168px; */
-/* } */
 .linkedin-container {
-  top: 44%;
+  top: 49%;
 }
 
 .github-container {
-  top: 30%;
+  top: 34%;
 }
 
 .twitter-container {
-  top: 58%;
+  top: 64%;
 }
 
 .email-container {
-  top: 72%;
+  top: 79%;
 }
 
 .linked-media-image {
@@ -332,6 +326,7 @@ p {
 
   .media-container {
     margin-left: -6%;
+    transform: initial;
   }
 
   .container {
