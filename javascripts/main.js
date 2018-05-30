@@ -48,7 +48,7 @@ function callTyped(target, string) {
         callback: function(){
           $(".typed-cursor").remove();
           $("#description").typed({
-            strings: ["Programer by definition,^250 if you have something interesting to code,^125 what are you waiting for? =) "],
+            strings: ["Engineer by definition,^250 if you have something interesting to code,^125 what are you waiting for? =) "],
             typeSpeed: 5,
             loop: false,
             contentType: 'html', // or text
