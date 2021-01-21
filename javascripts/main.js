@@ -2,7 +2,7 @@ $('<img/>').attr('src', 'images/forest.jpg')[0].onload = function() {
   $(this).remove(); // prevent memory leaks as @benweet suggested
   $('.loader')[0].style.display = 'none';
   $('#bodySection')[0].removeAttribute('hidden');
-  callTyped("#mainTitle", "Agustín Falco Developer^500");
+  callTyped("#mainTitle", "Agustín Falco - Senior Software Engineer^500");
 
 };
 
